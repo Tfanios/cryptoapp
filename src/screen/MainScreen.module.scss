@@ -1,0 +1,38 @@
+.PaginationContainer {
+  width: 70%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  li {
+    --size: 32px;
+    --margin: 6px;
+    margin: 0 var(--margin);
+    border-radius: 6px;
+    background: #202020;
+    max-width: auto;
+    min-width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 6px;
+    a {
+      width: 100%;
+    }
+    @media (hover: hover) {
+      &:hover {
+        background: lighten(#202020, 3%);
+      }
+    }
+    &:active {
+      background: lighten(#202020, 3%);
+    }
+  }
+}
+
+.ActivePage {
+  background-color: #5cdb95 !important;
+  color: #202020;
+}
